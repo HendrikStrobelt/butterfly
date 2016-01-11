@@ -46,7 +46,7 @@ class DataSource(object):
                 tmp_image = f[datasets[0]][()]
         else:
             print 'Current path', cur_path
-            tmp_image = cv2.imread(cur_path, 0)
+            tmp_image = cv2.imread(cur_path, cv2.IMREAD_UNCHANGED)
 
         # Resize if necessary, then also store to cache
         if w > 0:

@@ -90,7 +90,7 @@ class WebServer:
 
         #Color mode is equivalent to segmentation color request right now
         color = parser.optional_queries['segcolor'] and parser.optional_queries['segmentation']
-
+        # color = True
         #Accepted image output formats
         image_formats = settings.SUPPORTED_IMAGE_FORMATS
 
